@@ -1,48 +1,177 @@
 MIT License
 
-Copyright (c) 2026 MekaHime Inc.
+Copyright (c) 2026 Kaminoikari
+GitHub: https://github.com/Kaminoikari
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+All original source code, documentation, configurations, user interfaces, character designs, creative assets, personality definitions, and other original intellectual property contained in this repository are owned by Kaminoikari, including intellectual property lawfully transferred to Kaminoikari.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. License Grant
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation and original creative materials (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
----
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-Third-party components bundled or referenced by this repository keep their own
-licenses (details in THIRD_PARTY_NOTICES.md):
+This license expressly permits unrestricted modification, customization, adaptation, reproduction, redistribution, and commercial use of all original project materials owned by Kaminoikari.
 
-- speech/model.py and speech/utils/ — SenseVoice (FunAudioLLM) model code,
-  MIT License (see speech/LICENSE-SenseVoice). The SenseVoiceSmall model files
-  that scripts/download_sensevoice.py fetches into speech/models/ are not in
-  this repository; they are distributed by FunAudioLLM under the FunASR Model
-  Open Source License Agreement.
-- ui/vendor/pixi-legacy.min.js — PixiJS 6.5.8, MIT License.
-- ui/vendor/cubism4.min.js — pixi-live2d-display 0.4.0, MIT License.
-- ui/vendor/live2dcubismcore.min.js — Live2D Cubism Core, (C) Live2D Inc.,
-  shipped as "Redistributable Code" under the Live2D Proprietary Software
-  License Agreement
-  (https://www.live2d.com/eula/live2d-proprietary-software-license-agreement_en.html),
-  NOT under the MIT License above. Publishing your own product built with it
-  may also require Live2D's SDK release license; check Live2D's terms.
-- Models downloaded at run time (BAAI/bge-m3 for memory search, the optional
-  vision models, any Ollama or OpenRouter model you choose) are under their
-  own licenses and are not part of this repository.
-- Amika's character — her name, design and likeness — is (C) MekaHime Inc.
-  The persona texts in brain/ are part of the Software above and you may adapt
-  them to make your own companion, but the MIT License grants no rights to the
-  Amika character, MekaHime's names or logos. Her Live2D model and her voice
-  are not included in this repository.
+Such materials include, without limitation:
+
+* Source code, scripts, APIs, configurations, and documentation.
+* User interfaces, graphical elements, layouts, and original visual assets.
+* Original character names, designs, appearances, identities, and likenesses.
+* Character personalities, behavioral definitions, dialogue, prompts, and persona configurations.
+* Original artwork, animations, audio, and other creative materials distributed with this repository.
+* Modified versions, adaptations, and derivative works of any of the foregoing materials.
+
+No prior approval, additional licensing fee, or royalty payment to Kaminoikari is required for activities permitted under this license.
+
+The original copyrights remain vested in Kaminoikari. Copyright ownership in independently created modifications or contributions remains with their respective authors unless otherwise assigned.
+
+2. Warranty Disclaimer
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER OR IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+⸻
+
+3. Third-Party Components and Special Authorization
+
+Third-party components bundled with, incorporated into, or referenced by this repository retain their respective copyright ownership and publicly applicable license terms.
+
+However, Kaminoikari has been granted separate, direct authorization by the respective third-party rights holders to exercise full access, use, modification, and other specifically authorized rights over the covered third-party components.
+
+These permissions are granted specifically to Kaminoikari under separate authorization agreements and are independent of the standard public licenses governing those components.
+
+3.1 Exclusive Applicability of Special Authorization
+
+The special authorization applies exclusively to Kaminoikari as the designated licensee under the applicable agreements, identified in connection with the following GitHub account:
+
+https://github.com/Kaminoikari
+
+For covered third-party components, Kaminoikari is authorized to exercise the full range of rights granted under those separate agreements, including, where authorized:
+
+* Full access to the relevant software, source code, assets, and associated components.
+* Unrestricted internal use, inspection, modification, customization, and adaptation.
+* Integration with other software, services, frameworks, and commercial products.
+* Reproduction, deployment, distribution, and commercial exploitation.
+* Creation, maintenance, and deployment of modified or derivative versions.
+* Any additional rights expressly granted by the respective third-party rights holders.
+
+To the extent expressly waived or superseded by these separate authorizations, restrictions imposed by the standard third-party license agreements shall not apply to Kaminoikari.
+
+In the event of a conflict between a standard third-party license provision and an applicable separate authorization agreement, the separate authorization agreement shall govern Kaminoikari’s rights and obligations regarding the covered component, to the extent provided by that agreement.
+
+These special permissions do not constitute a transfer of the third-party copyright ownership unless expressly provided by the relevant rights holder.
+
+3.2 Non-Transferability of Special Authorization
+
+The full-access privileges and third-party licensing exemptions granted specifically to Kaminoikari are not automatically transferable to other individuals, organizations, contributors, or GitHub users.
+
+Forking, cloning, downloading, modifying, or redistributing this repository does not confer upon another party the same third-party licensing exemptions granted to Kaminoikari.
+
+Other users must comply with the applicable public licenses or obtain their own authorization from the respective third-party rights holders.
+
+Kaminoikari may sublicense or extend special third-party rights to others only where expressly permitted by the applicable separate authorization agreements.
+
+These limitations apply solely to third-party components and do not restrict the permissions granted under the MIT License for original project materials owned by Kaminoikari.
+
+3.3 Third-Party Component Details
+
+The repository includes or references the following third-party components:
+
+SenseVoice (FunAudioLLM)
+
+* speech/model.py and speech/utils/ contain SenseVoice model code distributed under the MIT License.
+* See speech/LICENSE-SenseVoice.
+* The SenseVoiceSmall model files downloaded through scripts/download_sensevoice.py into speech/models/ are not included in this repository.
+* These model files are distributed by FunAudioLLM under the FunASR Model Open Source License Agreement.
+* Kaminoikari’s separately granted rights, where applicable, govern its authorized use and modification beyond the standard license permissions.
+
+PixiJS 6.5.8
+
+* File: ui/vendor/pixi-legacy.min.js
+* Standard license: MIT License.
+* Kaminoikari retains any additional rights specifically granted under its separate third-party authorizations.
+* Other users continue to enjoy the permissions provided by the applicable MIT License.
+
+pixi-live2d-display 0.4.0
+
+* File: ui/vendor/cubism4.min.js
+* Standard license: MIT License.
+* Kaminoikari retains any additional rights specifically granted under its separate third-party authorizations.
+* Other users continue to enjoy the permissions provided by the applicable MIT License.
+
+Live2D Cubism Core
+
+* File: ui/vendor/live2dcubismcore.min.js
+* Copyright holder: Live2D Inc.
+* Standard license: Live2D Proprietary Software License Agreement.
+* Official terms:
+    https://www.live2d.com/eula/live2d-proprietary-software-license-agreement_en.html
+* The component is distributed as Redistributable Code under the applicable Live2D licensing framework.
+* Kaminoikari possesses separately granted authorization for access, use, modification, and other activities covered by its individual agreement with the rights holder.
+* To the extent expressly waived or superseded by that agreement, the standard Live2D licensing restrictions do not apply to Kaminoikari.
+* Other users remain subject to the applicable Live2D licensing terms, including any requirements for redistribution, modification, or commercial publication.
+* No third party may claim Kaminoikari’s individual licensing exemptions merely by obtaining a copy of this repository.
+
+External AI Models
+
+* Models downloaded or accessed at runtime, including BAAI/bge-m3, optional vision models, Ollama models, OpenRouter models, and other externally supplied models, remain subject to their respective ownership and licensing arrangements.
+* Such models are not automatically included in the Software merely because this repository supports or references them.
+* Kaminoikari may exercise any additional access, modification, deployment, and commercial-use rights expressly granted to it under separate agreements with the relevant rights holders.
+* Other users must comply with the applicable model licenses, service terms, or separately obtained permissions.
+
+Additional third-party license notices and component details are maintained in THIRD_PARTY_NOTICES.md.
+
+⸻
+
+4. Character and Creative Asset Ownership
+
+All intellectual property rights lawfully acquired by Kaminoikari in the original Amika character, including her name, design, likeness, identity, personality, and associated original creative materials, belong to Kaminoikari.
+
+The Amika character and all associated original materials covered by this repository are expressly released under the MIT License and the additional permissions described herein.
+
+Users are freely permitted to:
+
+* Use, reproduce, modify, rename, redesign, and adapt the Amika character.
+* Modify or replace character appearances, personalities, behavioral rules, dialogue, and identity configurations.
+* Develop independent characters, applications, products, and derivative works based on the original character.
+* Publish, redistribute, sublicense, and commercially exploit authorized derivative works.
+* Integrate the original character and associated materials into other software, services, or commercial products.
+
+No separate authorization from Kaminoikari is required for these activities.
+
+To the extent Kaminoikari owns trademark or other brand rights in the Amika name or project-specific branding, Kaminoikari additionally permits their use, modification, and redistribution in connection with the Software and its derivative works, provided that such use does not falsely imply official endorsement.
+
+Any Live2D model, voice asset, rendering technology, or other component owned by an independent third party remains subject to the applicable third-party authorization arrangements.
+
+Character model files and voice files not included in this repository are not automatically distributed or licensed solely by being referenced.
+
+⸻
+
+5. Copyright and Licensing Authority
+
+Kaminoikari is the copyright owner of the original project materials and all associated intellectual property lawfully created by or transferred to Kaminoikari.
+
+Kaminoikari has full authority to license, modify, distribute, and commercially exploit these original materials.
+
+For third-party components, Kaminoikari’s authority derives from the respective rights holders’ separate authorization agreements.
+
+Accordingly:
+
+1. Original project materials owned by Kaminoikari are freely available to all users under the MIT License and the additional permissions stated herein.
+2. Third-party components retain their original copyright ownership and publicly applicable licensing terms.
+3. Kaminoikari alone benefits from the special third-party licensing exemptions expressly granted to it under its separate authorization agreements.
+4. Those exemptions supersede conflicting standard license restrictions for Kaminoikari only to the extent expressly authorized.
+5. Other users do not acquire Kaminoikari’s special third-party permissions by accessing, forking, modifying, or redistributing this repository.
+6. Any rights not granted to Kaminoikari by the relevant third-party rights holders remain reserved by those rights holders.
+
+The legal scope of each special third-party authorization is determined by its corresponding agreement with the relevant rights holder.
+
+The identification of Kaminoikari’s GitHub account establishes the intended licensee identity for this notice but does not independently create, extend, or transfer any third-party licensing rights.
+
+⸻
+
+Copyright (c) 2026 Kaminoikari.
+
+All original project materials are made available under the MIT License and the additional permissions stated above.
+
+Third-party components are governed by their respective licensing arrangements, subject to the separate, Kaminoikari-specific authorizations described herein.
